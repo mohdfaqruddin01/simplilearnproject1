@@ -1,0 +1,15 @@
+{
+  "name": "Using fixtures to represent data",
+  "email": "hello@cypress.io",
+  "body": "Fixtures are a great way to mock data for responses to routes"
+}
+class BasePage {
+  constructor() {
+    this.url = ""; // Define the base URL of your application
+  }
+
+  before() {
+    cy.visit(this.url);
+    // Any other setup steps you need to perform before each test
+  }
+}
